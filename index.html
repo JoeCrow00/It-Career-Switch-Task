@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Task for IT Career Switch</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+		<meta name="author" content="Joe Crowton">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body>
+        <h2>Task for It Career Switch :)</h2>
+        <h3>What would you like to know?</h3>
+		<div id="apiTable">
+			<table>
+				<tr>
+					<th>
+						API Name
+					</th>
+					<th>
+                        API Description
+                    </th>
+                    <th>
+                    </th>
+				</tr>
+				<tr>
+					<td align="center">
+						Currency Code
+					</td>
+					<td>
+                        <label for="currency">Choose a country to see their currency code</label>
+                        <select id="currency">
+                            <option value="GB">Great Britain</option>
+                            <option value="US">USA</option>
+                            <option value="ES">Spain</option>
+                            <option value="DE">Germany</option>
+                            <option value="DK">Denmark</option>
+                            <option value="VN">Vietnam</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="IN">India</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="ZM">Zambia</option>
+                        </select>
+					</td>
+                    <td>
+                        <button id="button1" class="submitButton">Submit</button>
+                    </td>
+				</tr>
+                <tr>
+					<td align="center">
+						Timezone Information
+					</td>
+					<td>
+                        <label for="timezoneLong">Longitude</label>
+                        <input type="text" id="timezoneLong">
+                        <label for="timezoneLati">Latitude</label>
+                        <input type="text" id="timezoneLati">
+					</td>
+                    <td>
+                        <button id="button2" class="submitButton">Submit</button>
+                    </td>
+				</tr>
+                <tr>
+					<td align="center">
+						Which Ocean?
+					</td>
+					<td>
+                        <label for="oceanLong">Longitude</label>
+                        <input type="text" id="oceanLong">
+                        <label for="oceanLati">Latitude</label>
+                        <input type="text" id="oceanLati">
+					</td>
+                    <td>
+                        <button id="button3" class="submitButton">Submit</button>
+                    </td>
+				</tr>
+			</table>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h3>Result</h3>
+        <!-- <h4>Currency:</h4> -->
+        <p id="currencyRes" class="resultData"></p>
+        <!-- <h4>Timezone:</h4> -->
+        <p id="TimezoneRes" class="resultData"></p>
+        <p id="TzCountryRes" class="resultData"></p>
+        <p id="TzTimeRes" class="resultData"></p>
+        <!-- <h4>Ocean:</h4> -->
+        <p id="OceanRes" class="resultData"></p>
+
+		<script type="application/javascript" src="libs/js/jquery.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+	</body>
+
+</html>
